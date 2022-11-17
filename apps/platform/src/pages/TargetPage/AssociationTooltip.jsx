@@ -38,7 +38,7 @@ function AssociationTooltip({ ensemblId, efoId, name, score, children }) {
             Disease profile
           </Link>
           <Link
-            href={`https://www.targetvalidation.org/evidence/${ensemblId}/${efoId}`}
+            href={`/evidence/${ensemblId}/${efoId}`}
             underline="none"
             display="block"
             align="center"

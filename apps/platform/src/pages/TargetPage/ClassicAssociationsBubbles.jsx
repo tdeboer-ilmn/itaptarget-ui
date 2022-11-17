@@ -38,8 +38,13 @@ function buildHierarchicalData(associations, idToDisease) {
   const tasScore = {};
   associations.forEach((association) => {
     const diseaseId = association.disease.id;
-    if (idToDisease[diseaseId].parentIds.length === 0) {
-      tasScore[diseaseId] = association.score;
+    try {
+        if (idToDisease[diseaseId].parentIds.length === 0) {
+          tasScore[diseaseId] = association.score;
+        }
+    }
+    catch(err) {
+        console.log(diseaseId)
     }
     const tas = findTas(diseaseId, idToDisease);
     tas.forEach((ta) => {

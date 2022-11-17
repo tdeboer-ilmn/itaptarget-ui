@@ -20,22 +20,22 @@ const OTLogo = props => {
       classes={classes}
     >
       <path
-        fill="#abd0e7"
+        fill="#f5dab8"
         d="M45.05 262.19a37.12 37.12 0 110-74.23h214.77v74.24z"
         transform="translate(-7.94 -6.26)"
       />
       <path
-        fill="#3488c8"
+        fill="#e28743"
         d="M171 278.81v37.12a37.12 37.12 0 01-74.24 0v-37.12z"
         transform="translate(-7.94 -6.26)"
       />
       <path
-        fill="#abd0e7"
+        fill="#f5dab8"
         d="M185.58 80.5V43.38a37.12 37.12 0 0174.24 0V80.5z"
         transform="translate(-7.94 -6.26)"
       />
       <path
-        fill="#3488c8"
+        fill="#e28743"
         d="M96.76 97.11h214.75a37.12 37.12 0 110 74.24H96.76z"
         transform="translate(-7.94 -6.26)"
       />

@@ -7,7 +7,7 @@ const searchExamples = {
     { label: 'WDR7', id: 'ENSG00000091157' },
   ],
   diseases: [
-    { label: 'Atopic Eczema', id: 'EFO_0000274' },
+    { label: 'epilepsy', id: 'EFO_0000474' },
     { label: 'Psoriasis', id: 'EFO_0000676' },
     { label: 'Alzheimer Disease', id: 'MONDO_0004975' },
     { label: 'Parkinson Disease', id: 'MONDO_0005180' },
