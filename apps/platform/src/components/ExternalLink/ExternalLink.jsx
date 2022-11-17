@@ -8,7 +8,7 @@ function ExternalLink({ title, id, url }) {
   return (
     <span>
       {title}:{' '}
-      <Link external to={url}>
+      <Link external newTab='true' to={url}>
         {id}
       </Link>
     </span>

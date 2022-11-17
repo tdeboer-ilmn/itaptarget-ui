@@ -12,6 +12,14 @@ export function otgVariantUrl(id) {
   return `${config.geneticsPortalUrl}/variant/${id}`;
 }
 
+export function itapStudyUrl(id) {
+  return `${config.iTAPbassUrl}/gwas?q=${id}`;
+}
+
+export function itapVariantUrl(id) {
+  return `${config.iTAPbassUrl}/variant?q=${id}`;
+}
+
 export function europePmcLiteratureQuery(ids) {
   const baseUrl = `https://www.ebi.ac.uk/europepmc/webservices/rest/search?&format=json&resultType=core&pageSize=${
     ids.length

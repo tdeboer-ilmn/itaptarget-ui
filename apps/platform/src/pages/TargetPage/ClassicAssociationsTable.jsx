@@ -200,7 +200,7 @@ function ClassicAssociationsTable({ ensgId, aggregationFilters }) {
   const [initialLoading, setInitialLoading] = useState(true);
   const [loading, setLoading] = useState(false);
   const [filter, setFilter] = useState('');
-  const [sortBy, setSortBy] = useState('score');
+  const [sortBy, setSortBy] = useState('itap_ensemble_score');
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(50);
 

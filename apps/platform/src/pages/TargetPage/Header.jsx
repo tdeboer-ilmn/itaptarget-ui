@@ -16,6 +16,7 @@ function Header({ loading, ensgId, uniprotIds, symbol, name, crisprId }) {
   const genecardsUrl = `https://identifiers.org/genecards:${symbol}`;
   const hgncUrl = `https://identifiers.org/hgnc.symbol:${symbol}`;
   const geneticsUrl = `${config.geneticsPortalUrl}/gene/${ensgId}`;
+  const iTAPUrl = `${config.iTAPbassUrl}/gene?q=${symbol}`;
 
   return (
     <HeaderBase
@@ -25,6 +26,7 @@ function Header({ loading, ensgId, uniprotIds, symbol, name, crisprId }) {
       Icon={faDna}
       externalLinks={
         <>
+          <ExternalLink title="iTAPbass" id={symbol} url={iTAPUrl} />
           <ExternalLink title="Ensembl" id={ensgId} url={ensemblUrl} />
           <XRefLinks
             label="UniProt"
@@ -32,11 +34,23 @@ function Header({ loading, ensgId, uniprotIds, symbol, name, crisprId }) {
             ids={uniprotIds}
             limit="3"
           />
-          <ExternalLink title="GeneCards" id={symbol} url={genecardsUrl} />
+          <ExternalLink title="GeneCards" id={symbol} url={genecardsUrl}/>
           <ExternalLink title="HGNC" id={symbol} url={hgncUrl} />
           <CrisprDepmapLink id={crisprId} />
           <TepLink ensgId={ensgId} symbol={symbol} />
         </>
+      }
+      centerContent={
+        <Button
+          href={iTAPUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          color="secondary"
+          variant="contained"
+          disableElevation
+        >
+          View {symbol} in iTAPbass
+        </Button>
       }
       rightContent={
         <Button

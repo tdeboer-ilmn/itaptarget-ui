@@ -2,6 +2,11 @@ import { isPrivateDataType } from './utils/partnerPreviewUtils';
 
 const dataTypes = [
   {
+    id: 'itap_ensemble_score',
+    label: 'iTAP Ensemble Score',
+    isPrivate: isPrivateDataType('itap_ensemble_score'),
+  },
+  {
     id: 'genetic_association',
     label: 'Genetic associations',
     isPrivate: isPrivateDataType('genetic_association'),

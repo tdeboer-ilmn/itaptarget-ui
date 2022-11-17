@@ -42,6 +42,7 @@ function Header({
   title,
   subtitle = null,
   externalLinks,
+  centerContent = null,
   rightContent = null,
 }) {
   const classes = useStyles();
@@ -83,6 +84,7 @@ function Header({
           </Grid>
         </Grid>
       </Grid>
+      <Grid item>{centerContent}</Grid>
       <Grid item>{rightContent}</Grid>
     </Grid>
   );

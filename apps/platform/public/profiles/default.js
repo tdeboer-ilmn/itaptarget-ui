@@ -9,10 +9,22 @@ var configProfile = {
   // otLogoTagline: '',
 
   /* colors */
-
-  primaryColor: '#3489ca',
+    //ILMN: e28743
+    //Original OT: #3489ca
+  primaryColor: '#e28743',
   // custom colour scale: override value in constants.js
-  // colorRange: [],
+  colorRange: [
+    '#f5ead3',
+    '#f2d7a0',
+    '#ebc57a',
+    '#dbb15e',
+    '#cc9e43',
+    '#bd8e31',
+    '#ad7e21',
+    '#9c6e14',
+    '#8a5f0a',
+    '#734d02',
+  ],
 
   /* partner preview options */
 

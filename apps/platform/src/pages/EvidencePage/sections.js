@@ -11,6 +11,7 @@ import * as Gene2Phenotype from '../../sections/evidence/Gene2Phenotype';
 import * as GenomicsEngland from '../../sections/evidence/GenomicsEngland';
 import * as IntOgen from '../../sections/evidence/IntOgen';
 import * as OTGenetics from '../../sections/evidence/OTGenetics';
+import * as iTAP from '../../sections/evidence/iTAP';
 import * as Impc from '../../sections/evidence/Impc';
 import * as Progeny from '../../sections/evidence/Progeny';
 import * as Reactome from '../../sections/evidence/Reactome';
@@ -28,6 +29,7 @@ import * as GeneBurden from '../../sections/evidence/GeneBurden';
 import config from '../../config';
 
 const sections = [
+  iTAP,
   OTGenetics,
   EVA,
   GeneBurden,

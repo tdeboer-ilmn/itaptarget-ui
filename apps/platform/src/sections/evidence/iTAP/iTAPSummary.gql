@@ -1,0 +1,10 @@
+fragment iTAPSummaryFragment on Disease {
+  iTAP: evidences(
+    ensemblIds: [$ensgId]
+    enableIndirect: true
+    datasourceIds: ["itap"]
+    size: 0
+  ) {
+    count
+  }
+}

@@ -2,6 +2,11 @@ import { isPrivateDataSource } from './utils/partnerPreviewUtils';
 
 const dataSources = [
   {
+    id: 'itap',
+    label: 'iTAPbass',
+    isPrivate: isPrivateDataSource('itap'),
+  },
+  {
     id: 'ot_genetics_portal',
     label: 'OT Genetics Portal',
     isPrivate: isPrivateDataSource('ot_genetics_portal'),
