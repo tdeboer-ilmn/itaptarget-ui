@@ -17,6 +17,7 @@ function Description({ symbol, diseaseName }) {
       <Link external to="https://app.genebass.org">
         Genebass
       </Link>
+      (<strong>ENSEMBLE score >= 0.1 only</strong>)
       .
     </>
   );

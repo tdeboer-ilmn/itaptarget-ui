@@ -9,7 +9,7 @@ export default defineConfig({
     port: 3001,
   },
   build: {
-    outDir: './bundle-platform',
+    outDir: './itaptargets',
   },
   plugins: [
     graphql(),
@@ -21,4 +21,5 @@ export default defineConfig({
     }),
     react(),
   ],
+  base: '/itaptargets'
 });

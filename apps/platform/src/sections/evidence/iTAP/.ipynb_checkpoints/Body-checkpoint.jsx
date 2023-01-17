@@ -13,6 +13,9 @@ import { itapStudyUrl, itapVariantUrl } from '../../../utils/urls';
 import { dataTypesMap } from '../../../dataTypes';
 import { identifiersOrgLink, sentenceCase } from '../../../utils/global';
 import Link from '../../../components/Link';
+import {
+  ExternalLink
+} from '../../../components/ExternalLink';
 import ScientificNotation from '../../../components/ScientificNotation';
 import SectionItem from '../../../components/Section/SectionItem';
 import Summary from './Summary';
@@ -62,7 +65,9 @@ const columns = [
     label: 'Study source',
     renderCell: ({ projectId }) => {
       if (!projectId) return naLabel;
-      if (Object.keys(studySourceMap).indexOf(projectId) < 0) return naLabel;
+      //Will just use projectId if we don't have it defined in constants.js...
+      //Not sure why they did not do that in OT
+      if (Object.keys(studySourceMap).indexOf(projectId) < 0) return projectId;
       return studySourceMap[projectId];
     },
   },
@@ -83,7 +88,7 @@ const columns = [
             {' '}
             (
             <Link
-              external
+              external 
               to={`http://www.ensembl.org/Homo_sapiens/Variation/Explore?v=${variantRsId}`}
             >
               {variantRsId}
@@ -101,7 +106,7 @@ const columns = [
     renderCell: ({ variantFunctionalConsequence }) =>
       variantFunctionalConsequence ? (
         <Link
-          external
+          external 
           to={identifiersOrgLink(
             'SO',
             variantFunctionalConsequence.id.slice(3)
@@ -184,7 +189,7 @@ const columns = [
       <>
         iTAP Ensemble Score - see{' '}
         <Link
-          external
+          external 
           to="http://10.112.80.189:16888/itapbass/about"
         >
           our documentation

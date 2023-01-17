@@ -38,7 +38,8 @@ function AssociationTooltip({ ensemblId, efoId, name, score, children }) {
             Disease profile
           </Link>
           <Link
-            href={`/evidence/${ensemblId}/${efoId}`}
+            component={RouterLink}
+            to={`/evidence/${ensemblId}/${efoId}`}
             underline="none"
             display="block"
             align="center"

@@ -20,6 +20,14 @@ export function itapVariantUrl(id) {
   return `${config.iTAPbassUrl}/variant?q=${id}`;
 }
 
+export function itapGeneUrl(id,statisticalMethod='ptv') {
+  return `${config.iTAPbassUrl}/gene?q=${id}&type=${statisticalMethod}`;
+}
+
+export function itapGeneburdenUrl(id) {
+  return `${config.iTAPbassUrl}/geneburden?q=${id}`;
+}
+
 export function europePmcLiteratureQuery(ids) {
   const baseUrl = `https://www.ebi.ac.uk/europepmc/webservices/rest/search?&format=json&resultType=core&pageSize=${
     ids.length

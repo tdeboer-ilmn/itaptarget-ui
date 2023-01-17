@@ -1,6 +1,6 @@
 {
-  "short_name": "Open Target Genetics",
-  "name": "Open Target Genetics",
+  "short_name": "iTAP Genetics",
+  "name": "iTAP Genetics",
   "icons": [
     {
       "src": "favicon.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#0091eb",
+  "theme_color": "#ff9900",
   "background_color": "#ffffff"
 }

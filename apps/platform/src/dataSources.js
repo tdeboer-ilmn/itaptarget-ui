@@ -7,6 +7,11 @@ const dataSources = [
     isPrivate: isPrivateDataSource('itap'),
   },
   {
+    id: 'itap_geneburden',
+    label: 'iTAP Gene Burden',
+    isPrivate: isPrivateDataSource('itap_geneburden'),
+  },
+  {
     id: 'ot_genetics_portal',
     label: 'OT Genetics Portal',
     isPrivate: isPrivateDataSource('ot_genetics_portal'),

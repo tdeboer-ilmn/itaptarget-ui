@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/client';
 import { ThemeProvider } from 'ui';
 
@@ -18,7 +19,7 @@ import APIPage from './pages/APIPage';
 const App = () => (
   <ApolloProvider client={client}>
     <ThemeProvider>
-      <Router>
+      <BrowserRouter basename={'/itapgenetics'}>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/study/:studyId" component={StudyPage} />
@@ -36,7 +37,7 @@ const App = () => (
             <NotFoundPage />
           </Route>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </ThemeProvider>
   </ApolloProvider>
 );

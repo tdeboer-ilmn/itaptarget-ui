@@ -21,8 +21,8 @@ const BasePage = ({ children }) => (
     footer={<Footer externalLinks={externalLinks} />}
   >
     <Helmet
-      defaultTitle="Open Targets Genetics"
-      titleTemplate="%s | Open Targets Genetics"
+      defaultTitle="iTAP Genetics"
+      titleTemplate="%s | iTAP Genetics"
     />
     {children}
   </Page>

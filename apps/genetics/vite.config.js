@@ -6,10 +6,10 @@ import graphql from '@rollup/plugin-graphql';
 // https://vitejs.dev/config/
 export default defineConfig({
   preview: {
-    port: 3000,
+    port: 3001,
   },
   build: {
-    outDir: './bundle-genetics',
+    outDir: './itapgenetics',
   },
   plugins: [
     graphql(),
@@ -21,4 +21,5 @@ export default defineConfig({
     }),
     react(),
   ],
+  base: '/itapgenetics'
 });

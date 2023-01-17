@@ -2,13 +2,13 @@
 var configProfile = {
   /* general items */
 
-  helpdeskEmail: 'helpdesk@opentargets.org',
+  helpdeskEmail: 'tdeboer@illumina.com',
   // config navbar main menu (hamburger)
   // mainMenuItems: [],
 
   /* colors */
 
-  primaryColor: '#3489ca',
+  primaryColor: '#ff9900',
 
   /* partner preview options */
 

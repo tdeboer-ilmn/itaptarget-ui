@@ -7,7 +7,7 @@ const styles = theme => ({
   splash: {
     left: 0,
     top: 0,
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.secondary.main,
     width: '100%',
     height: '100%',
     position: 'absolute',

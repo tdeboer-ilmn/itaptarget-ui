@@ -62,7 +62,9 @@ const columns = [
     label: 'Study source',
     renderCell: ({ projectId }) => {
       if (!projectId) return naLabel;
-      if (Object.keys(studySourceMap).indexOf(projectId) < 0) return naLabel;
+      //Will just use projectId if we don't have it defined in constants.js...
+      //Not sure why they did not do that in OT
+      if (Object.keys(studySourceMap).indexOf(projectId) < 0) return projectId;
       return studySourceMap[projectId];
     },
   },

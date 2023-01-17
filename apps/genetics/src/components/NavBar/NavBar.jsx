@@ -14,7 +14,7 @@ import HeaderMenu from './HeaderMenu';
 
 const styles = theme => ({
   navbar: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.secondary.main,
     margin: 0,
     width: '100%',
   },
@@ -91,7 +91,7 @@ const NavBar = ({
         [classes.navbarHomepage]: homepage,
       })}
       position="static"
-      color="primary"
+      color="secondary"
       elevation={0}
     >
       <Toolbar variant="dense">

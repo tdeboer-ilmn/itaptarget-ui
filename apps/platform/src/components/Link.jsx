@@ -45,7 +45,7 @@ class Link extends React.Component {
       tooltip,
       className,
     } = this.props;
-    const newTabProps = newTab
+    const newTabProps = newTab | external
       ? { target: '_blank', rel: 'noopener noreferrer' }
       : {};
     return external ? (

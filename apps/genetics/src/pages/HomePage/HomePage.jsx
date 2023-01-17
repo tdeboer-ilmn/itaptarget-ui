@@ -142,7 +142,7 @@ class HomePage extends Component {
     return (
       <Fragment>
         <Helmet>
-          <title>Open Targets Genetics</title>
+          <title>iTAP Genetics</title>
         </Helmet>
         <main ref={this.searchSectionRef}>
           <Grid
@@ -220,7 +220,7 @@ class HomePage extends Component {
               About Open Targets Genetics
             </Typography>
             <Typography paragraph>
-              Open Targets Genetics is a comprehensive tool highlighting
+              iTAP Genetics is a comprehensive tool highlighting
               variant-centric statistical evidence to allow both prioritisation
               of candidate causal variants at trait-associated loci and
               identification of potential drug targets.

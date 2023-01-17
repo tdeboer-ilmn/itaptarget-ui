@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
+
 import { ApolloProvider } from '@apollo/client';
 
 import { ThemeProvider } from 'ui';
@@ -26,7 +27,7 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <ThemeProvider theme={theme}>
-          <Router>
+          <BrowserRouter basename={'/itaptargets'}>
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/search" component={SearchPage} />
@@ -39,7 +40,7 @@ class App extends Component {
               <Route path="/api" component={APIPage} />
               <Route component={NotFoundPage} />
             </Switch>
-          </Router>
+          </BrowserRouter>
         </ThemeProvider>
       </ApolloProvider>
     );

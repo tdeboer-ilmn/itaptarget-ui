@@ -7,7 +7,7 @@ function Description({ symbol, name }) {
     <>
       Results from Illumina AI model on <strong>{symbol}</strong> as
       likely causal gene for <strong>{name}</strong>. Source:{' '}
-      <Link to={config.itapURL} external>
+      <Link to={config.iTAPbassUrl} external newTab>
         iTAPbass
       </Link>
     </>
